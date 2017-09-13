@@ -1,0 +1,12 @@
+<ListView id="ListView" items="{{ myItems }}" itemTap="tapGoToDetailPage" itemTemplateSelector="$value % 2 ? 'green' : 'red'" loaded="onLoaded">
+        
+    <ListView.itemTemplates>
+        <template key="green">
+            <Label text="{{ $value + ' Tap me' }}" style.backgroundColor="green" />
+        </template>
+        <template key="red">
+            <Label text="{{ $value + ' Tap me' }}" style.backgroundColor="red" />
+        </template>
+    </ListView.itemTemplates>
+
+</ListView>
